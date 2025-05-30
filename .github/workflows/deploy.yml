@@ -47,11 +47,11 @@ jobs:
       #   run: tar --exclude='./node_modules' --exclude='./.git' --exclude='./html' -cvf source.tar .
 
       # 第九步：部署到 GitHub Pages
-      - name: 部署到 GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./html  # 指定构建输出目录
+      # - name: 部署到 GitHub Pages
+      #   uses: peaceiris/actions-gh-pages@v3
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     publish_dir: ./html  # 指定构建输出目录
 
       # 第十步：创建 GitHub Release 并上传压缩包
       - name: 发布 Release 并上传构建包
